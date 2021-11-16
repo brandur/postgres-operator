@@ -284,7 +284,6 @@ func (c *Client) ListAllClusters() (ClusterList, error) {
 			return ClusterList{}, err
 		}
 		allClusters.Clusters = append(allClusters.Clusters, toAdd.Clusters...)
-		allClusters.Count += toAdd.Count
 	}
 	// At the time of this code, the team order is sorted by personal, then
 	// other teams and by team name
